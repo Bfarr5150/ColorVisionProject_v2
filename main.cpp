@@ -6,12 +6,12 @@ using namespace std;
 
 //VECTORS (Need at least 2) --> DONE
 //FUNCTIONS (Need at least 2) --> DONE
+//RETURN TYPE (Need at least 2 unique types) --> DONE
 //LOOPS (At least 1) --> DONE
-//PASS-BY-VALUE & PASS-BY-REFERENCE (Need at least 1 of each)
+//PASS-BY-VALUE & PASS-BY-REFERENCE (Need at least 1 of each) -->
 
 //PROTOTYPES (Need at least 2)
-bool uniqueColors (vector <vector <int>> RGB_List, vector <int> RGB);
-//MAKE FIRST FOR LOOP INTO FUNCTION? --> to take three numbers and determine if they are all between 0-255? --> return 
+bool uniqueColors (vector <vector <int>> RGB_List, vector <int> RGB); 
 vector <int> userColor (); //no arguments --> 
 
 int main(){
@@ -20,14 +20,14 @@ int main(){
   string fileName = "";
   ofstream file;
   vector <int> RGB;
-  vector < vector <int>> RGB_List; //2D vector
+  vector < vector <int> > RGB_List; //2D vector --> vector < "inside vector" > --> vector holds all the values stored in "inside vector"
   int randomNumber = 0;
   int generateNumber = 5;
 
   cout << "Choose 3 color values (Red,Green,Blue) to save to a file (From 0-255):\n" << endl;
     
   //user color function
-  RGB = userColor(); //RGB is now assigned from information a
+  RGB = userColor(); //RGB is now assigned from information acquired from userColor vector
 
   RGB_List.push_back (RGB); // will make a copy of usercolor inside RGB_List, from the push_back values of RGB
 
@@ -62,9 +62,9 @@ int main(){
   if (file.is_open() == true){
     for (int i = 0; i < RGB_List.size(); i++){
       for (int j = 0; j < RGB_List[i].size(); j++){
-        cout << RGB_List[i][j] << " ";
+        file << RGB_List[i][j] << " ";
       }
-      cout << endl;
+      file << endl;
     }
   }
   file.close ();
@@ -74,8 +74,7 @@ int main(){
 
 //DEFINITIONS
 
-//IS COLOR UNIQUE?
-//not changing values, asking if RGB value is in list
+//IS COLOR UNIQUE? --> not changing values, asking if RGB value is in list
 bool uniqueColors (vector <vector <int>> RGB_List, vector <int> RGB){
   for (int i = 0; i < RGB_List.size(); i++){
     if ((RGB_List[i][0] == RGB [0]) && (RGB_List[i][1] == RGB [1]) && (RGB_List [i][2] == RGB [2])){ //&& because it has to evaluate the value of every input ([0], [1], [2]), and if EVERY value is the same (aka is the same color), then it returns false
@@ -85,7 +84,7 @@ bool uniqueColors (vector <vector <int>> RGB_List, vector <int> RGB){
   return true; //put outside of for loop --> since didn't find rgb match, you can return true --> if you found a match, it would return false (inside for loop) --> if didn't find any matches in for loop, it returns as true, outside of for loop.
 }
 
-//USER COLOR DECISION
+//USER COLOR DECISION --> getting userColor input and adding value to RGB vector
 vector <int> userColor (){
   int userColor;
   vector <int> RGB;
@@ -101,5 +100,5 @@ vector <int> userColor (){
       }
     } while (userColor < 0 || userColor > 255);
   }
-  return RGB;
+  return RGB; //returns the three values pushed back from userColor input
 }

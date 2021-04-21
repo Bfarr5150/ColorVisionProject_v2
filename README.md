@@ -1,4 +1,4 @@
-# !!!Replace with your unique project name!!!
+# The Six Color Generator
 
 ## Description
 
@@ -6,7 +6,7 @@
 
 ### v0.2 Updates
 
-*Coming soon*
+I completely changed my previous code. Everything I did has been an update. I have included this whole description of each part and am completing these, as there is no similarity between this deliverable and the first one.
 
 ### v1.0 Updates
 
@@ -36,11 +36,13 @@ Here is an example of the program running:
 
 ### Variables and Data Types
 
-I used a variety of variables and data types. The main data type I used was 'int', but I also used a 'bool' data type. The reason why 'int' was the most used data type was because my goal was to take the input of numbers, store the numbers, and utilize them in varying ways. I used many variables within my code. Each one with its unique purpose, and named appropriately for what they were representing in the code.
+I used a variety of variables and data types. The main data type I used was 'int', but I also used a 'bool' and 'string' data type. The reason why 'int' was the most used data type was because my goal was to take the input of numbers, store the inputs, and utilize them in varying ways. I used many variables within my code. Each one with its unique purpose, and named appropriately for what they were being used in the code.
 
 ### Console Input and Output
 
-!!!Replace with a summary and examples of how input and output have been used effectively and appropriately!!! The main form of user input I used was the gathering of the RGB values they chose, as well as the input of the name of their file. I had the user input 3 separate numbers between 0-255 and evaluated whether or not the value they gave was within the range or not. If it was in the range, the value would be stored and output, but if it was outside of the range, it would output an error message and request the user to input a valid value.
+!!!Replace with a summary and examples of how input and output have been used effectively and appropriately!!! 
+
+The main form of user input I used was the gathering of the RGB values they chose, as well as the input of the name of their file. I had the user input 3 separate numbers between 0-255 and evaluated whether or not the value they gave was within the range or not. If it was in the range, the value would be stored and output, but if it was outside of the range, it would output an error message and request the user to input a valid value.
 
 ### Decisions
 
@@ -89,7 +91,7 @@ I used several decisions within my code.
 
 
 
-## The Six Color Problem Solver 
+## The Six Color Problem Solver (V 0.1)
 ## ***
 #### I was not able to complete this whole project, or even most of it. I tried my best, but I just kept getting stuck and I wasn't able to come to the lab times on wednesday and thursday because I had gotten called into work. If it is possible, could I go over what I could have done for the rest of the project? How I could have gotten the rest of the deliverable up and running? The greatest difficulty I had was getting stuck after naming the file. I spent hours researching different ways to get the file i/o working and I just wasn't able to figure it out. I was able to follow through with the individual parts of the assignment, besides the file i/o, but my overall outcome was not what I wish it was and I wish I had been more vocal on slack at the time I needed the help, rather than later and that I had alotted more time to the project. I thought that 10+ hours working on it would be enough (yes, that is how long I spent on what I got completed), but apparently not. I would like to go over what I was doing wrong in this deliverable. I want to make sure that I understand the content so I don't get left in the dust as we progress through the rest of the class. I know I am not going to get a lot of points for this, but I just want you to know that I tried my best with the time I had.
 ## ***
