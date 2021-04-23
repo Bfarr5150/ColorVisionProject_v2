@@ -1,12 +1,12 @@
-# The Six Color Generator
+# The Five Color Generator (V 0.2)
 
 ## Description
 
-!!!Replace with a description of what your program does!!!
+The program goes through a process to ask the user for three values that are between 0-255, and generates 5 additional, unique colors. If the user selects a number outside of the range, they will be presented with an error and asked to enter a valid number. After this, the program analyzes the values that the user input and generates 5 other RGB values (15 generated values total). When it generates the random numbers, that are between 0-255, it compares the numbers that the user input to the values that the random generated numbers are. The program will not make a RGB color combination that is the same as the user's. Each of these RGB elements are then stored and written to a file, finishing the process.
 
 ### v0.2 Updates
 
-I completely changed my previous code. Everything I did has been an update. I have included this whole description of each part and am completing these, as there is no similarity between this deliverable and the first one.
+I completely changed my previous code. Everything I did has been an update. I have included the whole description of each part and am completing these, as there is no similarity between this deliverable and the first one. I also included the first readme.md text below this.
 
 ### v1.0 Updates
 
@@ -25,70 +25,83 @@ To run the program, give the following commands:
 g++ --std=c++11 *.cpp -o cvp
 ./cvp
 ```
-
 Here is an example of the program running:
+```
+Choose 3 color values (Red,Green,Blue) to save to a file (From 0-255):
+
+-10
+This value was not between 0-255. Please enter another value.
+0
+255
+350
+This value was not between 0-255. Please enter another value.
+180
+
+0 255 180 
+103 198 105 
+115 81 255 
+74 236 41 
+205 186 171 
+242 251 227 
+
+Enter a file name: FiveColorGenerator
+
+Your file, FiveColorGenerator, has been created successfully!
+```
+File contents of above results:
+```
+0 255 180 
+103 198 105 
+115 81 255 
+74 236 41 
+205 186 171 
+242 251 227
 
 ```
-!!!Replace with an example of the program running with user interaction!!!
-```
-
 ## C++ Guide
 
 ### Variables and Data Types
 
-I used a variety of variables and data types. The main data type I used was 'int', but I also used a 'bool' and 'string' data type. The reason why 'int' was the most used data type was because my goal was to take the input of numbers, store the inputs, and utilize them in varying ways. I used many variables within my code. Each one with its unique purpose, and named appropriately for what they were being used in the code.
+I used a variety of variables and data types. The main data type I used was 'int', but I also used a 'bool', 'string', and 'void' data type. The reason why 'int' was the most used data type was because my goal was to take the input of numbers, store the inputs, and utilize them in varying ways. I used many variables within my code. Each one with its unique purpose, and named appropriately for what they were being used for in the code.
 
-### Console Input and Output
+### Console Input and Output 
 
-!!!Replace with a summary and examples of how input and output have been used effectively and appropriately!!! 
-
-The main form of user input I used was the gathering of the RGB values they chose, as well as the input of the name of their file. I had the user input 3 separate numbers between 0-255 and evaluated whether or not the value they gave was within the range or not. If it was in the range, the value would be stored and output, but if it was outside of the range, it would output an error message and request the user to input a valid value.
+The main form of user input I used was the gathering of the RGB values they chose, as well as the input of the name of their file. I had the user input 3 separate numbers between 0-255 and evaluated whether or not the value they gave was within the range or not. If it was in the range, the value would be stored and output, but if it was outside of the range, it would output an error message and request the user to input a valid value. There is also a confirmation message that shows up when the user has successfully named/created their file.
 
 ### Decisions
 
-!!!Replace with a summary and examples of how multiple decision constructs have been used effectively and appropriately!!!
-I used several decisions within my code. 
+I used several decisions within my code. These were primarily present in the for loops that I had used. One example of a decision is the 'if, else' decision used to get the user's color input, and whether or not to store it. So, in this context, it analyzes the user's input to see IF it is between 0-255. IF it is, THEN it stores that value into the variable. ELSE, it runs an error cout statement and rolls back that input and looks for another valid value.
 
 ### Iteration
 
-!!!Replace with a summary and examples of how iteration has been used effectively and appropriately!!!
+Obviously, I used a significant amount of for loops within this deliverable. I also used a do-while loop inside one of the function definitions. A good example of one of the for loops was making sure the color was unique. The for loop parameters included the size of RGB_List. So, the values of RGB stored inside RGB_List were required to be different from one another. I used a nested if statement to check against the value in RGB_List [i] and make sure it wasn't the same number that is stored in the RGB variable [0], [1], [2]. If it was the same, then it would return as false and would go through until it has a value that is not equal to the number that the user input.
 
 ### File Input and Output
 
-!!!Replace with a summary and examples of how input and/or output of files have been used effectively and appropriately!!!
+For this program, I gathered the input of the user and the 5 generated random numbers and stored each one in a file, which was named based on the user's input. With this, it created a file that contained each value, separated into six lines. Each line held the three RGB values for each color.
 
 ### Arrays/Vectors
 
-*Coming in version 0.2*
+I was able to utilize a couple vectors throughout this deliverable. I had one vector that stores the three RGB values for each color. I also utilized a 2D vector that helped combined all the values stored into RGB into one variable. I used the RGB_List vector to compile all the values into that variable, making it easier to capture all the values gathered from the RGB inputs into one place.
 
 ### Functions
 
-*Coming in version 0.2*
+I used two functions with this deliverable. I used one for determining whether each random generated number was unique from the user's input. I used another one to obtain the users input. For the userColor function, I utilized a pass-by-reference, which helped me change the return type from what was an integer, to a void function. It removed the requirement to return an argument to the main function, so all I had to do was call it in main. It definitely made it easier to do. 
 
 ### Classes
 
 *Coming in version 1.0*
 
+##
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## ********
+## ********
+## ********
 
 
 ## The Six Color Problem Solver (V 0.1)
