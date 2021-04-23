@@ -90,7 +90,7 @@ I used two functions with this deliverable. I used one for determining whether e
 
 ### Classes
 
-*Coming in version 1.0*
+*Coming in version 1.0* 
 
 ##
 
