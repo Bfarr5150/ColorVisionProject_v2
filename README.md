@@ -78,6 +78,7 @@ I used a variety of variables and data types. The main data type I used was 'int
 #### V 1.0 Variables/Data Types Updates
 I ended up taking out the void data type, since it was not necessary with the way that I made the new class.
 
+## 
 ### Console Input and Output 
 
 The main form of user input I used was the gathering of the RGB values they chose, as well as the input of the name of their file. I had the user input 3 separate numbers between 0-255 and evaluated whether or not the value they gave was within the range or not. If it was in the range, the value would be stored and output, but if it was outside of the range, it would output an error message and request the user to input a valid value. There is also a confirmation message that shows up when the user has successfully named/created their file.
@@ -85,6 +86,7 @@ The main form of user input I used was the gathering of the RGB values they chos
 #### V 1.0 Console IO Updates
 After adding my new class, the console output has changed from just inlcuding what the color value is to giving the value and labeling its color dominance.
 
+## 
 ### Decisions
 
 I used several decisions within my code. These were primarily present in the for loops that I had used. One example of a decision is the 'if, else' decision used to get the user's color input, and whether or not to store it. So, in this context, it analyzes the user's input to see IF it is between 0-255. IF it is, THEN it stores that value into the variable. ELSE, it runs an error cout statement and rolls back that input and looks for another valid value.
@@ -92,6 +94,7 @@ I used several decisions within my code. These were primarily present in the for
 #### V 1.0 Decisions Update
 Not much changed with this. I implemented several "if, else" statements within the class.
 
+## 
 ### Iteration
 
 Obviously, I used a significant amount of for loops within this deliverable. I also used a do-while loop inside one of the function definitions. A good example of one of the for loops was making sure the color was unique. The for loop parameters included the size of RGB_List. So, the values of RGB stored inside RGB_List were required to be different from one another. I used a nested if statement to check against the value in RGB_List [i] and make sure it wasn't the same number that is stored in the RGB variable [0], [1], [2]. If it was the same, then it would return as false and would go through until it has a value that is not equal to the number that the user input.
@@ -99,6 +102,7 @@ Obviously, I used a significant amount of for loops within this deliverable. I a
 #### V 1.0 Iteration Update
 I didn't change a whole lot of this. I changed the 2D vector to implement the class with it, which enabled me to take out some of the nested for loops that I previously had.
 
+## 
 ### File Input and Output
 
 For this program, I gathered the input of the user and the 5 generated random numbers and stored each one in a file, which was named based on the user's input. With this, it created a file that contained each value, separated into six lines. Each line held the three RGB values for each color.
@@ -106,19 +110,22 @@ For this program, I gathered the input of the user and the 5 generated random nu
 #### V 1.0 File I/O Updates
 The only thing that I changed with the file io is the format change for storing/printing the information that was input into the file.
 
+## 
 ### Arrays/Vectors
 
 I was able to utilize a couple vectors throughout this deliverable. I had one vector that stores the three RGB values for each color. I also utilized a 2D vector that helped combined all the values stored into RGB into one variable. I used the RGB_List vector to compile all the values into that variable, making it easier to capture all the values gathered from the RGB inputs into one place.
 
 #### V 1.0 Arrays/Vectors Updates
 
-There were some big overhauls on the ways I used the vectors. The biggest change was switching the 2D vector from an integer data type to my class. This tweak changed a lot of the code. This has similar functionality, however, I don't ne
+There were some big overhauls on the ways I used the vectors. The biggest change was switching the 2D vector from an integer data type to my class. This tweak changed a lot of the code. This has similar functionality, however, I don't need the RGB_List anymore. Now that I have implemented my class, I have all the values being stored in the class, where it checks the color dominance of all the different colors.
+
+##
 
 ### Functions
 
 I used two functions with this deliverable. I used one for determining whether each random generated number was unique from the user's input. I used another one to obtain the users input. For the userColor function, I utilized a pass-by-reference, which helped me change the return type from what was an integer, to a void function. It removed the requirement to return an argument to the main function, so all I had to do was call it in main. It definitely made it easier to do. 
 
-#### V 1.0 Functions Update ###
+#### V 1.0 Functions Update
 In addition to the previous functions, I implemented two new string functions. Each were used to display the dominance of the colors. The first one, "printDominance", was used to check which of the three values was higher, if they were all the same, or if there were two that were the same. This went through and evaluated the conditions of each color and determined what the dominance was. The second function that was added took the dominance value that was assigned to each value and printed it to the string in the correct format.
 
 ##
@@ -219,7 +226,7 @@ Obviously, I used a significant amount of for loops within this deliverable. I a
 
 ### File Input and Output
 
-For this program, I gathered the input of the user and the 5 generated random numbers and stored each one in a file, which was named based on the user's input. With this, it created a file that contained each value, separated into six lines. Each line held the three RGB values for each color.
+For this program, I gathered the input of the user and the 50 generated random numbers and stored each one in a file, which was named based on the user's input. With this, it created a file that contained each value, separated into six lines. Each line held the three RGB values for each color.
 
 ### Arrays/Vectors
 
